@@ -6,7 +6,7 @@ const fetchUser = (cb) => {
   }, 100)
 }
 
-// !expect.test.js的test和这里的it 什么区别
+// !expect.test.js的test和这里的it 什么区别 -- 一样
 it('test callback', (done) => {
   fetchUser((data) => {
     expect(data).toBe('hello')
