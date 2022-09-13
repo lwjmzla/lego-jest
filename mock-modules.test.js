@@ -22,3 +22,17 @@ it("test with mock modules", async () => {
   console.log(data1,data2,data3)
   expect(axios.get).toHaveBeenCalled(); // 是否被调用
 });
+
+const can1 = {
+  flavor: 'grapefruit',
+  ounces: 12,
+};
+
+const can2 = {
+  flavor: 'grapefruit',
+  ounces: 12,
+};
+
+test('have all the same properties', () => {
+  expect(can1).toEqual(can2); // !对象里的值比较，用toEqual
+});
